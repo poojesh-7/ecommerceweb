@@ -1,0 +1,56 @@
+.address_page {
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.address_page h1 {
+  align-self: flex-start;
+  margin-bottom: 50px;
+}
+
+.address_input_holder {
+  position: relative;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "top top";
+}
+
+.address_input_holder input {
+  padding-left: 10px;
+  height: 50px;
+  width: 200px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #d7f0f4;
+  border-bottom: 5px solid black;
+}
+
+.address_input_holder input:nth-of-type(1) {
+  width: 100%;
+  grid-area: top;
+}
+
+.input_error {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .address_item_inp_lab {
+    margin-top: -20px;
+  }
+  .address_input_holder {
+    grid-template-areas: "top";
+    width: 400px;
+  }
+}

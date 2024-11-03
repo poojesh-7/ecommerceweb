@@ -1,0 +1,176 @@
+.crt_section {
+  padding: 30px 100px;
+  margin-top: 60px;
+}
+
+.crt_card_cover {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* display: flex;
+  justify-content: space-around; */
+  margin-bottom: 30px;
+}
+
+.crt_card {
+  overflow: hidden;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* width: 80%; */
+  position: relative;
+  border-radius: 5px;
+  border: 2px solid black;
+  display: flex;
+  background-color: #e5fffa;
+}
+
+.crt_title {
+  font-size: 23px;
+}
+
+.crt_img_cover {
+  display: flex;
+  border-radius: 10px 0 0 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-right: 10px;
+  width: 200px;
+  height: 210px;
+  background-color: white;
+}
+.crt_image {
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.crt_content {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.cart_back {
+  display: flex;
+  justify-content: space-between;
+}
+
+.in_de_qty {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in_de_qty button {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.in_de_qty button:nth-last-of-type(1) {
+  font-size: 50px;
+  background: transparent;
+  border: none;
+}
+
+.in_de_qty button:disabled {
+  color: gray;
+}
+
+.crt_qty {
+  border-radius: 5px;
+  background-color: rgb(138, 248, 207);
+  margin: 0 5px;
+  width: 30px;
+  font-size: 25px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.crt_btn_cover {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .crt_section {
+    padding: 30px 50px;
+  }
+  .crt_title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .fav_page {
+    padding: 30px 20px;
+  }
+  .crt_image {
+    width: 130px;
+    height: 130px;
+  }
+  .crt_title {
+    font-size: 18px;
+  }
+
+  .crt_qty {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  .in_de_qty button {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 30px;
+  }
+
+  .in_de_qty button:nth-last-of-type(1) {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .crt_card_cover {
+    display: flex;
+    position: relative;
+  }
+  .crt_card {
+    width: 100%;
+  }
+  .crt_img_cover {
+    padding: 40px 20px;
+  }
+  .crt_btn_cover {
+    left: 0;
+    display: block;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .in_de_qty {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .in_de_qty button {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .in_de_qty button:nth-last-of-type(1) {
+    font-size: 40px;
+  }
+  .crt_qty {
+    padding-top: 2px;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+}

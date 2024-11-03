@@ -1,0 +1,52 @@
+.n_card {
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  right: 50px;
+  width: 300px;
+  /* height: 140px; */
+  background-color: yellow;
+  padding: 20px 10px;
+  animation: fadeAway 4s ease 1 forwards;
+  border-radius: 5px;
+  /* transform: translateX(-100%); */
+  /* transition: all 2s ease; */
+}
+
+/* .n_card_slide {
+  transform: translateX(0%);
+  transition: all 2s ease;
+} */
+
+.n_title {
+  width: 24px;
+  margin: 0;
+}
+
+@keyframes fadeAway {
+  0% {
+    transform: translateY(-100%);
+    transition: all 0.5s ease-out;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    transition: all 0.5s ease 1s;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .n_title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .n_title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,43 @@
+.sp_card {
+  display: flex;
+  background-color: #e5fffa;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.sp_img_cover {
+  margin: 5px;
+}
+
+.sp_title {
+  margin-bottom: 0px;
+  font-weight: bold;
+  width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sp_content {
+  margin-left: 20px;
+}
+
+.sp_img {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .sp_card {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sp_card {
+    width: 350px;
+  }
+  .sp_title {
+    width: 200px;
+  }
+}

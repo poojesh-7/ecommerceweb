@@ -1,0 +1,59 @@
+.comments {
+  margin-right: 30px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.comment {
+  margin-top: 15px;
+  position: relative;
+  border-bottom: 2px solid black;
+}
+.c_date {
+  position: absolute;
+  right: 10px;
+}
+
+.c_user {
+  margin-bottom: 30px;
+}
+
+.c_like {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+}
+.like_img {
+  width: 25px;
+  height: 25px;
+}
+
+.comments::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.comments::-webkit-scrollbar-track {
+  background: #494242; /* color of the tracking area */
+}
+
+.comments::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid #494242;
+}
+
+@media screen and (max-width: 900px) {
+  .c_user {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .comments {
+    margin-right: 0;
+  }
+}

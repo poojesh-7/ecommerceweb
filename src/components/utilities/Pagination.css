@@ -1,0 +1,28 @@
+.pagenos {
+  margin: 40px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagenos_holder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 400px; */
+}
+
+.pageno {
+  margin: 0 10px;
+  background-color: rgb(153, 207, 254);
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 10px 5px 10px 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.clicked {
+  background-color: rgb(225, 241, 255);
+}
