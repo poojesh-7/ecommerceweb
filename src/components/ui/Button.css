@@ -31,6 +31,11 @@
   background-color: rgb(250, 38, 116);
 }
 
+.home_nav_btn {
+  font-weight: bold;
+  background-color: rgb(10, 10, 207);
+}
+
 .medium {
   width: 100px;
   height: 38px;

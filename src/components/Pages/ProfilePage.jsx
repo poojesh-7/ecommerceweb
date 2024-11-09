@@ -5,6 +5,7 @@ const ProfilePage = () => {
   const name = localStorage.getItem("userName");
   const email = localStorage.getItem("userEmail");
   const address = localStorage.getItem("userAddress");
+  const mobileno = localStorage.getItem("userMobno");
   return (
     <div className="profile_page">
       <Link to="/">
@@ -30,6 +31,8 @@ const ProfilePage = () => {
       <p>{email}</p>
       <h4>Address :</h4>
       <p>{address}</p>
+      <h4>Contact number :</h4>
+      <p>{mobileno}</p>
     </div>
   );
 };

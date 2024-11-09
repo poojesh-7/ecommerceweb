@@ -90,9 +90,9 @@ const CartPage = () => {
         </Button>
       </Link>
       {state.notiState.show && <Notification />}
-      <h1>Cart</h1>
+      <h1 style={{ marginTop: "60px" }}>Cart</h1>
       {state.cart.length === 0 ? (
-        <h1 className="no_products">No products added</h1>
+        <h2 className="no_products">Your cart is empty</h2>
       ) : (
         content
       )}

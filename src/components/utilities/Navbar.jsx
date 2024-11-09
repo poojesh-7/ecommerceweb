@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import Hamburger from "../ui/Hamburger";
 import Slider from "../ui/Slider";
@@ -44,12 +44,14 @@ const Navigation = () => {
   return (
     <>
       <div className="navigation">
-        <img
-          src="https://i.ibb.co/x3VrLkP/bag.png"
-          alt="bag"
-          border="0"
-          className="logo"
-        />
+        <Link to="/">
+          <img
+            src="https://i.ibb.co/x3VrLkP/bag.png"
+            alt="bag"
+            border="0"
+            className="logo"
+          />
+        </Link>
         <Hamburger />
       </div>
       <Slider>{displayNavLinks}</Slider>

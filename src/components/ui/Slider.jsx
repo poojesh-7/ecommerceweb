@@ -9,12 +9,14 @@ const Slider = (props) => {
   const navigate = useNavigate();
   const state = StoreHook()[0];
   const dispathcFn = StoreHook(false)[1];
-  const logout = () => {
+  const logout = (e) => {
+    e.preventDefault();
     dispathcFn("LOGOUT", false);
     dispathcFn("CLOSE_SLIDER", false);
     localStorage.setItem("token", false);
     navigate("/");
   };
+
   return (
     <>
       <ModalCover></ModalCover>

@@ -2,8 +2,9 @@ a {
   text-decoration: none;
 }
 .login-page {
+  height: 100vh;
+  background-color: rgb(240, 241, 255);
   padding-top: 100px;
-  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -53,7 +53,7 @@ const FavouritesPage = () => {
   } else {
     content =
       state.fav.length === 0 ? (
-        <h1 className="no_products">No Products</h1>
+        <h2 className="no_products">No Products</h2>
       ) : (
         state.fav.map((item) => (
           <div className="fp_card_cover" key={item.id}>
@@ -102,7 +102,7 @@ const FavouritesPage = () => {
         </Button>
       </Link>
       {state.notiState.show && <Notification />}
-      <h1 className="fp_page_title">Favourites</h1>
+      <h1 className="fp_page_title first_letter">Favourites</h1>
       {content}
       <Link to="/cart">
         <Button btnCont="Cart" size="large" />

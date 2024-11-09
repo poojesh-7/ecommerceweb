@@ -1,6 +1,7 @@
 .crt_section {
   padding: 30px 100px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  height: 100vh;
 }
 
 .crt_card_cover {

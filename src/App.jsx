@@ -1,9 +1,5 @@
 // import { lazy } from "react";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  useParams,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./components/Pages/RootLayout";
 import ProductsPage from "./components/Pages/ProductsPage";
 import ViewProduct from "./components/Pages/ViewProduct";
@@ -53,6 +49,7 @@ const router = createBrowserRouter([
 function App() {
   const dispatchFn = StoreHook(false)[1];
   let userLogin = localStorage.getItem("token");
+  console.log(userLogin);
   window.addEventListener("load", () => {
     if (userLogin) {
       dispatchFn("LOGIN", true);

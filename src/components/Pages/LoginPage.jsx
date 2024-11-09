@@ -70,6 +70,7 @@ const LoginPage = () => {
     } else {
       if (isValidEmail && isValidPassword) {
         const existedUser = localStorage.getItem("userEmail");
+        // const userToken = localStorage.getItem("token");
         if (existedUser?.toLowerCase() === email) {
           dispatchFn("SET_NOTIFICATION", {
             message: "Successfully logged in",
@@ -79,7 +80,7 @@ const LoginPage = () => {
           dispatchFn("LOGIN", true);
           localStorage.setItem("token", true);
           setTimeout(() => {
-            navigate("address");
+            navigate("/");
           }, 4000);
         } else {
           dispatchFn("SET_NOTIFICATION", {
@@ -96,7 +97,7 @@ const LoginPage = () => {
       password: isValidPassword,
     });
   };
-  console.log(state.login);
+
   return (
     <div className="login-page">
       <Link to="/">

@@ -34,7 +34,7 @@ const NotificationProvider = () => {
     },
     LOGOUT: (curState, payload) => {
       const userLog = payload;
-
+      console.log(payload);
       return {
         notiState: curState.notiState,
         login: userLog,

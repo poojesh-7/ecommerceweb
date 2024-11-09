@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   /* background-color: #e5fffa; */
-  background: rgba(174, 186, 255, 0.593);
+  background: rgba(174, 186, 255, 0.592);
+  /* background: rgba(255, 224, 174, 0.593); */
   /* background: linear-gradient(
     90deg,
     rgb(139, 205, 251) 80%,
