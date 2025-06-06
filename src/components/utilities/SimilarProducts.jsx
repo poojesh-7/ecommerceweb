@@ -31,9 +31,7 @@ const SimilarProducts = ({ id }) => {
         <img src={product.image} className="sp_img" />
         <div className="sp_content">
           <p className="sp_title">{product.title}</p>
-          <p>
-            <b>₹ {Math.trunc(product.price * 80)}</b>
-          </p>
+          <p>₹{Math.trunc(product.price * 80)}</p>
           <Link to={"/" + product.id}>
             <Button clickEvent={moveToTop} btnCont="View" size="small" />
           </Link>

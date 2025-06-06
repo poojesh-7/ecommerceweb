@@ -1,9 +1,11 @@
 .sp_card {
   display: flex;
-  background-color: #e5fffa;
-  padding: 5px;
-  border: 1px solid black;
+  background-color: rgba(174, 239, 255, 0.592);
+  /* background-color: #e5fffa; */
+  /* padding: 5px; */
+  /* border: 1px solid black; */
   border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.171);
   margin-bottom: 30px;
 }
 .sp_img_cover {
@@ -24,6 +26,7 @@
 }
 
 .sp_img {
+  /* margin: -5px; */
   width: 100px;
   height: 100px;
 }

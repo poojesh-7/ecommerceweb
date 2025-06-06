@@ -3,7 +3,6 @@ a {
 }
 .login-page {
   height: 100vh;
-  background-color: rgb(240, 241, 255);
   padding-top: 100px;
   display: flex;
   justify-content: center;
@@ -50,7 +49,7 @@ label {
   text-align: center;
 }
 #submit-btn {
-  background: -webkit-linear-gradient(right, #ff3777, #bd2d94);
+  background: -webkit-linear-gradient(right, #7bb7f7, #2e75c0);
   border: none;
   border-radius: 21px;
   box-shadow: 0px 1px 8px #cb2789;
@@ -72,18 +71,18 @@ label {
   flex-direction: column;
 }
 .form-border {
-  background: -webkit-linear-gradient(right, #f72971, #f769d3);
+  background: -webkit-linear-gradient(right, #7bb7f7, #2e75c0);
   height: 2px;
   width: 100%;
 }
 .form-content {
-  background: #fbfbfb;
+  background: transparent;
   border: none;
   outline: none;
   padding-top: 4px;
 }
 .underline-title {
-  background: -webkit-linear-gradient(right, #f77bca, #c02e6b);
+  background: -webkit-linear-gradient(right, #7bb7f7, #2e75c0);
   height: 2px;
   margin: -0.1rem auto 0 auto;
   width: 89px;

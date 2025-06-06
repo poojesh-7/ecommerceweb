@@ -49,7 +49,7 @@ const router = createBrowserRouter([
 function App() {
   const dispatchFn = StoreHook(false)[1];
   let userLogin = localStorage.getItem("token");
-  console.log(userLogin);
+
   window.addEventListener("load", () => {
     if (userLogin) {
       dispatchFn("LOGIN", true);

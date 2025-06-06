@@ -3,6 +3,12 @@
   padding: 40px 100px;
 }
 
+.summary_title {
+  /* display: none; */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
 .product_summary_card {
   display: grid;
   grid-template-areas: "top top" "left right";
@@ -33,8 +39,8 @@
 .pay_button {
   border-radius: 5px;
   width: 150px;
-  height: 48px;
-  background-color: #dcffc7;
+  height: 40px;
+  background-color: #9fdcff;
   font-weight: bold;
 }
 

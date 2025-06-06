@@ -5,11 +5,11 @@
 .search_bar {
   outline: none;
   height: 42px;
-  border: none;
+  /* border: none; */
   border-bottom: 3px solid black;
   padding-left: 10px;
-  border-radius: 5px 20px 5px 20px;
-  background-color: rgb(248, 230, 254);
+  border-radius: 5px;
+  /* border-radius: 5px 20px 5px 20px; */
 }
 
 .search_icon_btn {

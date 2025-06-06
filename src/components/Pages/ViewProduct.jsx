@@ -1,9 +1,9 @@
 import "./ViewProduct.css";
-import { Link, Outlet, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import HttpHook from "../../customHook/HttpHook";
 import Button from "../ui/Button";
-import { fetchProducts, fetchSingleProduct } from "../../customHook/Api";
-import { useEffect, useState } from "react";
+import { fetchSingleProduct } from "../../customHook/Api";
+import { useEffect } from "react";
 import Comments from "../utilities/Comments";
 import SimilarProducts from "../utilities/SimilarProducts";
 import StoreHook from "../../customHook/StoreHook";
@@ -60,11 +60,12 @@ const ViewProduct = () => {
     isInCart = state?.cart.findIndex((cartItem) => cartItem.id === data.id);
     content = (
       <div className="vp_cover">
+        <h1 className="vp_title ">{data.title}</h1>
         <div className="vp_image_cover">
           <img src={data.image} className="vp_image" />
         </div>
         <div className="vp_content">
-          <h1 className="vp_title">{data.title}</h1>
+          <h1 className="vp_title_des">{data.title}</h1>
           <p className="vp_rating">
             <b>{data.rating.rate}</b>
             <img
@@ -75,14 +76,13 @@ const ViewProduct = () => {
             />
           </p>
           <p className="vp_price">
-            <b className="vp_price_1">Price : </b>₹{" "}
-            <del>{Math.trunc(data.price * 80)}</del>
+            Price:₹<del>{Math.trunc(data.price * 80)}</del>
           </p>
           <div className="deal">
             <p>10 % off on first orders</p>
           </div>
           <p className="vp_discount">
-            ₹ {Math.trunc(data.price * 80 - (data.price * 80) / 10)}
+            ₹{Math.trunc(data.price * 80 - (data.price * 80) / 10)}
           </p>
 
           <div className="seperate_line"></div>
@@ -115,11 +115,12 @@ const ViewProduct = () => {
           <Link to="/">
             <Button size="medium" custStyle="back_btn">
               <img
-                className="nav_back_img"
-                src="https://i.ibb.co/JcQ2wkX/backward.png"
+                className="nav_back"
+                src="https://i.ibb.co/Y7Kk8WJL/cross.png"
                 alt="backward"
                 border="0"
               />
+              {/* <p className="btn_img_txt">Back</p> */}
             </Button>
           </Link>
           {state.notiState.show && <Notification />}

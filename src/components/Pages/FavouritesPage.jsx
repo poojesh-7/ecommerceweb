@@ -62,28 +62,28 @@ const FavouritesPage = () => {
                 <img src={item.image} className="fp_img" />
               </div>
               <div className="fp_content">
-                <h2 className="fp_title">{item.title}</h2>
+                <h5 className="fp_title">{item.title}</h5>
                 <p className="fp_price">
                   ₹ {Math.trunc(item.price * 80 - (item.price * 80) / 10)}
                 </p>
-                <p className="fp_date">
+                {/* <p className="fp_date">
                   Added on<b> {DateFormatter(item.date)}</b>
-                </p>
+                </p> */}
               </div>
-            </div>
-            <div className="fp_btn_cover">
-              <Button
-                btnCont="Add to cart"
-                size="large"
-                custStyle="custStyle1"
-                clickEvent={addToCart.bind(null, item)}
-              />
-              <Button
-                btnCont="Remove"
-                custStyle="custStyl2"
-                clickEvent={removeFromFavs.bind(null, item.id)}
-                size="medium"
-              />
+              {/* <div className="fp_btn_cover">
+                </div> */}
+              <button
+                className="add_to_cart_fav"
+                onClick={addToCart.bind(null, item)}
+              >
+                Add to cart
+              </button>
+              <button
+                className="remove_fav"
+                onClick={removeFromFavs.bind(null, item.id)}
+              >
+                Remove
+              </button>
             </div>
           </div>
         ))
@@ -103,9 +103,9 @@ const FavouritesPage = () => {
       </Link>
       {state.notiState.show && <Notification />}
       <h1 className="fp_page_title first_letter">Favourites</h1>
-      {content}
+      <div className="fav_items_holder">{content}</div>
       <Link to="/cart">
-        <Button btnCont="Cart" size="large" />
+        <Button btnCont="Cart" size="special" />
       </Link>
     </div>
   );

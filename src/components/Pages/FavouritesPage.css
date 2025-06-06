@@ -1,18 +1,30 @@
 .fav_page {
   margin-top: 60px;
-  padding: 30px 100px;
+  padding: 30px 40px;
+}
+
+.fav_items_holder {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .fp_page_title {
   margin-bottom: 30px;
 }
+
+.fp_title {
+  font-size: 18px;
+  font-weight: semi-bold;
+}
+
 .fp_content {
   padding: 10px 0;
 }
 
 .fp_card_cover {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   /* display: flex;
   justify-content: space-around; */
   margin-bottom: 30px;
@@ -24,9 +36,9 @@
   /* width: 80%; */
   position: relative;
   border-radius: 5px;
-  border: 2px solid black;
   display: flex;
-  background-color: #e5fffa;
+  background: rgba(174, 239, 255, 0.592);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.171);
 }
 
 .fp_img_cover {
@@ -42,18 +54,10 @@
   height: 150px;
 }
 
-.fp_title {
-  font-size: 24px;
-  /* text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap; */
-}
-
 .fp_price {
   /* font-weight: bold; */
-  font-size: 20px;
+  font-size: 18px;
 }
-
 .fp_date {
   color: #776969;
   position: absolute;
@@ -68,15 +72,31 @@
   align-items: center;
 }
 
+.add_to_cart_fav,
+.remove_fav {
+  position: absolute;
+  bottom: 10px;
+  padding: 3px 5px;
+  background-color: rgb(249, 186, 103);
+  border-radius: 5px;
+}
+
+.add_to_cart_fav {
+  left: 180px;
+}
+.remove_fav {
+  right: 10px;
+}
+
 @media screen and (max-width: 1000px) {
   .fav_page {
-    padding: 30px 50px;
+    padding: 30px 100px;
   }
   .fp_card_cover {
     justify-content: space-between;
   }
-  .fp_title {
-    font-size: 20px;
+  .fav_items_holder {
+    display: block;
   }
 }
 
@@ -84,6 +104,7 @@
   .fav_page {
     padding: 30px 20px;
   }
+
   .fp_card_cover {
     justify-content: space-between;
   }
@@ -92,9 +113,6 @@
     width: 130px;
     height: 130px;
   }
-  .fp_title {
-    font-size: 18px;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -102,6 +120,7 @@
     display: flex;
     position: relative;
   }
+
   .fp_card {
     width: 100%;
   }

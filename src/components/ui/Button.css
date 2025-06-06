@@ -5,17 +5,26 @@
   border-radius: 5px;
 }
 
+.cust_btn1 {
+  background-color: red;
+}
+
 .cust_btn:disabled {
   background-color: rgb(128, 128, 128);
 }
 
 .large {
   font-size: large;
-
-  width: 150px;
-  height: 48px;
+  padding: 5px 10px;
+  /* width: 150px; */
+  /* height: 48px; */
 }
 
+.special {
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(black, gray);
+}
 .address_sub_btn {
   position: absolute;
   right: 0;
@@ -24,11 +33,19 @@
 
 .back_btn {
   position: absolute;
-  top: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(255, 255, 255);
+  top: 65px;
   border-radius: 0 0 0 5px;
   right: 0;
   font-weight: bold;
-  background-color: rgb(250, 38, 116);
+}
+
+.nav_back {
+  width: 25px;
+  height: 25px;
 }
 
 .home_nav_btn {
@@ -37,13 +54,15 @@
 }
 
 .medium {
-  width: 100px;
-  height: 38px;
+  padding: 5px 10px;
+  /* width: 100px;
+  height: 38px; */
 }
 
 .small {
-  width: 80px;
-  height: 30px;
+  padding: 5px 10px;
+  /* width: 80px;
+  height: 30px; */
 }
 
 .lg_btn {
@@ -67,6 +86,7 @@
   .custStyle1 {
     position: absolute;
     bottom: 0;
+    left: 0;
   }
   .large {
     height: 30px;

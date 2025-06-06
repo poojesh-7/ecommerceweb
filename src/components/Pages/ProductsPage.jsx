@@ -1,9 +1,8 @@
 import "./ProductsPage.css";
 
-import { useEffect, useState, lazy } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import HttpHook from "../../customHook/HttpHook";
 // import ProductCard from "./ProductCard";
-import Button from "../ui/Button";
 import Categories from "../utilities/Categories";
 import SearchBar from "../utilities/Searchbar";
 import { fetchProducts } from "../../customHook/Api";
@@ -79,7 +78,7 @@ const ProductsPage = () => {
       <div className="discount">
         <div className="discount_sec1">
           <h1 className="discount_text">10% discount on the first order</h1>
-          <Button btnCont="Shop now" size="large" />
+          <button className="shop_now_btn">Shop now</button>
         </div>
 
         <img src="https://i.ibb.co/gMHkpHH/Frame-2.png" className="cloth_img" />
@@ -91,9 +90,8 @@ const ProductsPage = () => {
       </div>
       <div className="products_holder">
         {state.notiState.show && <Notification />}
-        {content}
+        <Suspense fallback={<Loader />}>{content}</Suspense>
       </div>
-      ;
       <Pagination
         curPage={pageno}
         pagination={pagination}

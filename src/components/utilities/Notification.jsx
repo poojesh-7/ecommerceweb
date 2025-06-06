@@ -22,7 +22,7 @@ const Notification = () => {
       className="n_card"
       style={{
         backgroundColor: `${
-          state.notiState.type === "red" ? "rgb(243, 20, 20)" : "lightgreen"
+          state.notiState.type === "red" ? "rgb(254, 61, 61)" : "lightgreen"
         }`,
       }}
     >

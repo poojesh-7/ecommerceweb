@@ -13,12 +13,16 @@
 }
 
 .discount {
-  background-color: #9ccbcb;
+  background: linear-gradient(
+    rgba(255, 0, 166, 0.464),
+    rgba(255, 238, 0, 0.492)
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 250px;
   padding: 0 40px;
+  display: none;
 }
 
 .discount_sec1 {
@@ -43,11 +47,20 @@
 
 .search_filter {
   position: relative;
-  padding: 0 60px;
+  padding: 0 20px;
+  margin-top: -30px;
   height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.shop_now_btn {
+  display: unset;
+  border-radius: 5px;
+  color: white;
+  width: 110px;
+  height: 35px;
+  background-color: rgb(4, 39, 57);
 }
 
 @media screen and (max-width: 1100px) {
@@ -82,5 +95,14 @@
   .cloth_img {
     width: 230px;
     height: 190px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .search_filter {
+    margin-top: 0px;
+    padding: 0 60px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }

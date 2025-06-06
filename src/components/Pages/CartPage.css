@@ -1,5 +1,5 @@
 .crt_section {
-  padding: 30px 100px;
+  padding: 30px 150px;
   /* margin-top: 60px; */
   height: 100vh;
 }
@@ -19,9 +19,9 @@
   /* width: 80%; */
   position: relative;
   border-radius: 5px;
-  border: 2px solid black;
   display: flex;
-  background-color: #e5fffa;
+  background: rgba(174, 239, 255, 0.592);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.171);
 }
 
 .crt_title {
@@ -73,6 +73,7 @@
 
 .in_de_qty button:nth-last-of-type(1) {
   font-size: 50px;
+  margin-top: -5px;
   background: transparent;
   border: none;
 }
@@ -83,7 +84,7 @@
 
 .crt_qty {
   border-radius: 5px;
-  background-color: rgb(138, 248, 207);
+  background-color: rgb(255, 255, 255);
   margin: 0 5px;
   width: 30px;
   font-size: 25px;

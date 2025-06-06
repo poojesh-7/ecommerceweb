@@ -19,12 +19,12 @@ const SummaryPage = () => {
   } else {
     content = state.cart.map((cartItem) => (
       <div key={cartItem.id} className="product_summary_card">
-        <h4 className="final_title">{cartItem.title}</h4>
+        <h6 className="final_title">{cartItem.title}</h6>
         {/* <b> */}
-        <h5 className="final_price">
-          ₹ {Math.trunc(cartItem.price * 80 - (cartItem.price * 80) / 10)}
-        </h5>
-        <h5 className="final_qty">Quantity : {cartItem.qty}</h5>
+        <h6 className="final_price">
+          ₹{Math.trunc(cartItem.price * 80 - (cartItem.price * 80) / 10)}
+        </h6>
+        <h6 className="final_qty">Quantity:{cartItem.qty}</h6>
         {/* </b> */}
       </div>
     ));
@@ -46,10 +46,10 @@ const SummaryPage = () => {
           />
         </Button>
       </Link>
-      <h1>Summary</h1>
-      <h2>Products</h2>
+      <h1 className="summary_title">Summary</h1>
+      {/* <h4>Products</h4> */}
       {content}
-      <h3>Total: ₹ {totalCost}</h3>
+      <h5>Total:₹{totalCost}</h5>
       <hr size="5"></hr>
       <h2>Payment Method</h2>
       <div className="pay_btns">
@@ -57,7 +57,9 @@ const SummaryPage = () => {
         <button className="pay_button">UPI</button>
         <button className="pay_button">Card</button>
       </div>
-      <Button btnCont="Place order" size="large" />
+      <Link to="/">
+        <Button btnCont="Place order" size="large" />
+      </Link>
     </div>
   );
 };

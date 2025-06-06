@@ -17,14 +17,14 @@ const FilterHolder = ({ userFilterVal }) => {
         { name: "Low to high", val: 1 },
       ],
     },
-    {
-      category: "Ratings",
-      options: [
-        // { name: "below 3", val: 3 },
-        { name: "3 to 4", val: { range1: 3, range2: 4 } },
-        { name: "Above 4", val: { range1: 4 } },
-      ],
-    },
+    // {
+    //   category: "Ratings",
+    //   options: [
+    // { name: "below 3", val: 3 },
+    //     { name: "3 to 4", val: { range1: 3, range2: 4 } },
+    //     { name: "Above 4", val: { range1: 4 } },
+    //   ],
+    // },
   ];
   const displayFilters = data.map((filter) => (
     <Dropdown key={filter.category}>

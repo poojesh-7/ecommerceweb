@@ -24,7 +24,7 @@ const Slider = (props) => {
         {props.children}
         {state.login && (
           <form onSubmit={logout}>
-            <Button btnCont="Logout" size="large" custStyle="lg_btn"></Button>
+            <button className="logout_user_btn">Logout</button>
           </form>
         )}
       </div>

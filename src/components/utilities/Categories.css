@@ -1,18 +1,23 @@
 .cat_holder {
+  padding: 5px 10px;
   border: 2px solid black;
+  background-color: rgb(29, 17, 70);
   border-left: none;
   border-right: none;
   display: flex;
+  color: white;
+  font-weight: bold;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .cat_btn {
-  height: 50px;
+  margin-bottom: -10px;
+
+  /* height: 50px;
   display: flex;
-  margin-right: 10px;
-  border-radius: 50%;
+  border-radius: 50%; */
   border: none;
   background-color: transparent;
 }
@@ -24,10 +29,10 @@
   align-items: center;
 }
 
-.cat_name {
+/* .cat_name {
   font-weight: bold;
   margin-top: 11px;
-}
+} */
 
 .cat_name::first-letter {
   text-transform: uppercase;
@@ -52,17 +57,4 @@
 .img_spc {
   width: 50px;
   height: 50px;
-}
-
-@media screen and (max-width: 850px) {
-  .cat_holder {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .cat_holder {
-    margin-bottom: 50px;
-  }
 }

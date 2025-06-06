@@ -35,10 +35,12 @@
   overflow: hidden;
   position: relative;
   border-right: 2px solid black;
-  width: 100%;
+  /* width: 100%; */
+  width: 400px;
   height: 100%;
   text-align: center;
-  background-color: rgb(215, 250, 238);
+  /* background-color: rgb(215, 250, 238); */
+  background-color: rgb(216, 234, 246);
 }
 
 .nav_p p {
@@ -62,3 +64,9 @@
 /* .act {
   color: white;
 } */
+
+@media screen and (max-width: 600px) {
+  .nav_p {
+    width: 300px;
+  }
+}
