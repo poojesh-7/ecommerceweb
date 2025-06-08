@@ -1,5 +1,5 @@
 .filters {
-  margin-top: 20px;
+/*   margin-top: 20px; */
 }
 .custom_width_dp {
   width: 160px;
@@ -8,4 +8,11 @@
 .option {
   margin-left: 20px;
   display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .filters {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
 }
